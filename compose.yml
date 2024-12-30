@@ -1,0 +1,18 @@
+version: '3.4'
+
+volumes:
+  dbdata:
+
+services:
+  database:
+    env_file: ".env"
+    container_name: database
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - ${DB_PORT}:3306
+    volumes:
+      - dbdata:/var/lib/mysql
