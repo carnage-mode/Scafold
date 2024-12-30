@@ -13,6 +13,16 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <script type="text/javascript">
+            var onloadCallback = function() {
+                grecaptcha.render('captcha_element', {
+                    'sitekey' : '{{ config('services.recaptcha.site_key') }}',
+                    'callback' : function(response) {
+                        document.getElementById("recaptcha_token").value = response;
+                    },
+                });
+            };
+        </script>
 
         <!-- Styles -->
         @livewireStyles
