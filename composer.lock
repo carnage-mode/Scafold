@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef8f1df3ab29f1a0f45862e4278e2c73",
+    "content-hash": "aa6c86c41ddb840212e183352bd7f6ba",
     "packages": [
         {
             "name": "backpack/basset",
@@ -173,6 +173,63 @@
                 "source": "https://github.com/Laravel-Backpack/CRUD/tree/6.7.45"
             },
             "time": "2024-12-20T16:51:25+00:00"
+        },
+        {
+            "name": "backpack/logmanager",
+            "version": "v5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/LogManager.git",
+                "reference": "8b38e10107d15b084ac9b7a8b7cdeb6cbc4e3a5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/LogManager/zipball/8b38e10107d15b084ac9b7a8b7cdeb6cbc4e3a5e",
+                "reference": "8b38e10107d15b084ac9b7a8b7cdeb6cbc4e3a5e",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Backpack\\LogManager\\LogManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\LogManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "tabacitu@backpackforlaravel.com",
+                    "homepage": "https://backpackforlaravel.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An interface to preview, download and delete Laravel log files.",
+            "homepage": "https://github.com/laravel-backpack/LogManager",
+            "keywords": [
+                "backpack",
+                "laravel",
+                "log interface",
+                "log manager",
+                "logs"
+            ],
+            "support": {
+                "issues": "https://github.com/Laravel-Backpack/LogManager/issues",
+                "source": "https://github.com/Laravel-Backpack/LogManager/tree/v5.0.2"
+            },
+            "time": "2024-06-24T09:57:03+00:00"
         },
         {
             "name": "backpack/theme-tabler",

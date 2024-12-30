@@ -5,3 +5,4 @@
 <x-backpack::menu-item title="Teams" icon="la la-question" :link="backpack_url('team')" />
 <x-backpack::menu-item title="Team invitations" icon="la la-question" :link="backpack_url('team-invitation')" />
 <x-backpack::menu-item title="Memberships" icon="la la-question" :link="backpack_url('membership')" />
+<x-backpack::menu-item title='Logs' icon='la la-terminal' :link="backpack_url('log')" />
