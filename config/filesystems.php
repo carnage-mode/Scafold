@@ -31,7 +31,12 @@ return [
     'disks' => [
         'storage' => [
             'driver' => 'local',
-            'root'   => storage_path(),
+            'root'   => storage_path('logs'),
+        ],
+
+        'backups' => [
+            'driver' => 'local',
+            'root'   => storage_path('backups'),
         ],
 
         'local' => [
