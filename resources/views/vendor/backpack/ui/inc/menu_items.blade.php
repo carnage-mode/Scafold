@@ -7,3 +7,4 @@
 <x-backpack::menu-item title="Memberships" icon="la la-question" :link="backpack_url('membership')" />
 <x-backpack::menu-item title='Logs' icon='la la-terminal' :link="backpack_url('log')" />
 <x-backpack::menu-item title='Backups' icon='la la-hdd-o' :link="backpack_url('backup')" />
+<x-backpack::menu-item title='Settings' icon='la la-cog' :link="backpack_url('setting')" />
